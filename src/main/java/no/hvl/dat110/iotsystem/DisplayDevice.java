@@ -3,7 +3,7 @@ package no.hvl.dat110.iotsystem;
 import no.hvl.dat110.client.Client;
 import no.hvl.dat110.messages.Message;
 import no.hvl.dat110.messages.PublishMsg;
-import no.hvl.dat110.common.TODO;
+
 
 import java.security.PublicKey;
 
@@ -15,7 +15,7 @@ public class DisplayDevice {
 		
 		System.out.println("Display starting ...");
 		
-		// TODO - START
+		
 
 		String brokerHost = "localhost";
 		int brokerPort = 8080;
@@ -44,11 +44,10 @@ public class DisplayDevice {
 		// - disconnect from the broker
 		client.disconnect();
 		
-		// TODO - END
 		
 		System.out.println("Display stopping ... ");
 		
-		throw new UnsupportedOperationException(TODO.method());
+		//throw new UnsupportedOperationException(TODO.method());
 		
 	}
 }
