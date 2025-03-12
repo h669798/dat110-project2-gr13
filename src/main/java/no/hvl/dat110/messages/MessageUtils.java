@@ -13,7 +13,13 @@ public class MessageUtils {
 
 		JsonObject json = JsonParser.parseString(msg).getAsJsonObject();
 		
-		String typestr = json.get("type").getAsString();
+		JsonElement typeElement = json.get("type");
+		if(typeElement == null) {
+			System.out.println(" ");
+			return null;
+		}
+		String typestr = typeElement.getAsString();
+		
 
 		MessageType type = MessageType.valueOf(typestr);
 
